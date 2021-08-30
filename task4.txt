@@ -1,0 +1,22 @@
+1- tar tf archive.tar
+---------------------------------
+2- sudo tar -cvpf  archive.tar
+---------------------------------
+3-ls -i /
+
+ - ls -i /etc
+
+ ls -i /etc/hosts
+----------------------------------
+ 4 -
+sudo cp /etc/passwd .
+sudo diff passwd /etc/passwd
+sudo cmp passwd /etc/passwd
+sudo nano passwd
+sudo diff passwd /etc/passwd
+sudo cmp passwd /etc/passwd
+   
+----------------------------------
+5- ln -s /etc/passwd /boot
+----------------------------------
+6- i cant make a hard link . because hard link didnt work betweem file systems .

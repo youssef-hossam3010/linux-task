@@ -1,0 +1,68 @@
+1-  
+1- Sudo Useradd -m islam
+2- useradd -c "islam Askar" islam
+3- Sudo passwd islam
+-----------------------------------------------
+2-
+1- Sudo Useradd -m Baduser
+2- useradd -c " Bad User" Baduser
+3- Sudo passwd baduser
+-----------------------------------------------
+3- sudo groupadd -g 30000 pgroup 
+-----------------------------------------------
+4- sudo groupadd badgroup
+-----------------------------------------------
+5- sudo usermod -G pgroup islam
+-----------------------------------------------
+6- sudo usermod -d islam
+-----------------------------------------------
+7- passwd -e islam 
+chage -E 2021-9-29
+------------------*----------------------------
+8- sudo usermod -L Baduser
+-----------------------------------------------
+9- sudo userdel -r Baduser
+-----------------------------------------------
+10- sudo groupdel Baduser
+-----------------------------------------------
+13- mkdir myteam 
+	ls -l myteam
+ 	 sudo chmod o=r myteam
+-----------------------------------------------
+14-    sudo logout
+	 su –l [other_user]
+-----------------------------------------------
+15- cd myteam
+-----------------------------------------------
+16-sudo chmod u=rw,g=wx,o=x /etc/passwd-
+sudo chmod 631 /etc/passwd-
+umask u=rw,g=wx,o=x
+-----------------------------------------------
+17- cp a dir: rx for source dir, wx for target dir
+cp a file: r for source file, wx for target dir
+delete a file: rw for source dir, no permissions for target file
+cd into a dir: rx for target dir
+ls: r for target dir
+cat/more: r for target file
+modify: rw for target file
+-----------------------------------------------	
+18- touch file
+
+    sudo chmod 444 file
+
+it cant be edited because its permission is read and and cant write in it.
+------------------------------------------------
+19- in files x means exectue that it puts the option to execute the file .
+    in directories it means that it allows you to enter the directory.
+------------------------------------------------
+20- sleep 100 &
+------------------------------------------------
+21- kill -9 sleep
+or
+ctrl + z
+------------------------------------------------
+22- ps -u islam
+------------------------------------------------
+23- ps -d islam
+------------------------------------------------
+24- pgrep -l -U islam	
